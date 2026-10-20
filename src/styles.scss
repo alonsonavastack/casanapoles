@@ -1,1 +1,119 @@
-/* You can add global styles to this file, and also import other style files */
+// Identidad Casa Nápoles: noche, dorado y crema (la misma de las cartas impresas).
+:root {
+  --noche: #0d0b09;
+  --carbon: #17130f;
+  --carbon-2: #211b15;
+  --linea: rgba(214, 168, 82, 0.28);
+  --oro: #e0a95a;
+  --oro-claro: #f6dda0;
+  --oro-oscuro: #a8722e;
+  --crema: #f2ede4;
+  --crema-suave: #c9bfae;
+  --rojo: #d4553f;
+  --verde: #6fbf73;
+
+  --f-titulo: 'Kaushan Script', 'Brush Script MT', cursive;
+  --f-texto: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+  --f-ui: 'Source Sans 3', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --radio: 10px;
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--noche);
+  color: var(--crema);
+  font-family: var(--f-ui);
+  font-size: 16px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--oro);
+  outline-offset: 2px;
+}
+
+.dorado {
+  background: linear-gradient(180deg, var(--oro-claro) 0%, var(--oro) 50%, var(--oro-oscuro) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+// Controles compartidos entre el menú y el panel
+.campo {
+  width: 100%;
+  background: var(--carbon);
+  border: 1px solid var(--linea);
+  border-radius: var(--radio);
+  padding: 10px 12px;
+  color: var(--crema);
+}
+.campo::placeholder {
+  color: #8d8274;
+}
+.campo:focus {
+  border-color: var(--oro);
+  outline: none;
+}
+
+.boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1px solid var(--linea);
+  background: var(--carbon-2);
+  color: var(--crema);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.boton:hover {
+  border-color: var(--oro);
+}
+.boton:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.boton.primario {
+  background: linear-gradient(180deg, var(--oro-claro), var(--oro));
+  color: #1a1209;
+  border-color: transparent;
+}
+.boton.peligro {
+  color: #ffb4a6;
+  border-color: rgba(212, 85, 63, 0.5);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

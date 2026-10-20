@@ -1,0 +1,234 @@
+@if (!datos.conSesion()) {
+  <main class="login">
+    <form class="tarjeta" (ngSubmit)="entrar()">
+      <img src="img/logo-crema.png" alt="Casa Nápoles" width="200" height="133" />
+      <h1>Administrar menú</h1>
+      <label for="clave">Contraseña</label>
+      <input class="campo" id="clave" name="clave" type="password" autocomplete="current-password" [(ngModel)]="password" required />
+      @if (errorLogin()) {
+        <p class="error" role="alert">{{ errorLogin() }}</p>
+      }
+      <button class="boton primario" type="submit" [disabled]="entrando() || !password">
+        {{ entrando() ? 'Entrando…' : 'Entrar' }}
+      </button>
+      <a routerLink="/" class="volver">Ver el menú público</a>
+    </form>
+  </main>
+} @else {
+  <header class="barra">
+    <div class="marca">
+      <img src="img/icono.png" alt="" width="28" height="28" />
+      <strong>Panel del menú</strong>
+      <span class="resumen">{{ resumen().total }} productos · {{ resumen().conFoto }} con foto</span>
+    </div>
+    <nav class="pestanas" aria-label="Secciones del panel">
+      <button type="button" [class.activa]="pestana() === 'productos'" (click)="pestana.set('productos')">Productos</button>
+      <button type="button" [class.activa]="pestana() === 'categorias'" (click)="pestana.set('categorias')">Categorías</button>
+      <button type="button" [class.activa]="pestana() === 'info'" (click)="pestana.set('info')">Datos del restaurante</button>
+    </nav>
+    <div class="acciones">
+      @if (sinGuardar()) {
+        <span class="pendiente">Cambios sin guardar</span>
+        <button type="button" class="boton" (click)="descartar()" [disabled]="guardando()">Descartar</button>
+      }
+      <button type="button" class="boton primario" (click)="guardar()" [disabled]="!sinGuardar() || guardando()">
+        {{ guardando() ? 'Guardando…' : 'Guardar cambios' }}
+      </button>
+      <a class="boton" routerLink="/" target="_blank">Ver menú</a>
+      <button type="button" class="boton" (click)="datos.salir()">Salir</button>
+    </div>
+  </header>
+
+  @if (aviso(); as a) {
+    <p class="aviso" [class.mal]="a.tipo === 'error'" role="status">{{ a.texto }}</p>
+  }
+
+  @if (!borrador()) {
+    <p class="vacio">{{ datos.error() ?? 'Cargando el menú…' }}</p>
+  } @else {
+    @let menu = borrador()!;
+
+    <!-- ================= PRODUCTOS ================= -->
+    @if (pestana() === 'productos') {
+      <div class="productos">
+        <section class="lista-panel" aria-label="Lista de productos">
+          <div class="filtros">
+            <input class="campo" type="search" id="f-buscar" placeholder="Buscar producto" [ngModel]="busqueda()" (ngModelChange)="busqueda.set($event)" />
+            <select class="campo" id="f-cat" [ngModel]="filtroCategoria()" (ngModelChange)="filtroCategoria.set($event)">
+              <option value="">Todas las categorías</option>
+              @for (c of categorias(); track c.id) {
+                <option [value]="c.id">{{ c.nombre }}</option>
+              }
+            </select>
+            <select class="campo" id="f-estado" [ngModel]="filtroEstado()" (ngModelChange)="filtroEstado.set($event)">
+              <option value="">Todos</option>
+              <option value="sin-foto">Sin foto</option>
+              <option value="con-foto">Con foto</option>
+              <option value="ocultos">Ocultos</option>
+            </select>
+            <button type="button" class="boton primario" (click)="agregarProducto()">+ Producto</button>
+          </div>
+          <p class="cuenta">{{ productosFiltrados().length }} resultados</p>
+          <ul class="filas">
+            @for (p of productosFiltrados(); track p.id) {
+              <li>
+                <button type="button" class="fila" [class.sel]="seleccionId() === p.id" [class.oculto]="!p.activo" (click)="seleccionar(p)">
+                  <span class="mini">
+                    @if (p.imagen) { <img [src]="p.imagen" alt="" loading="lazy" /> } @else { <span>sin foto</span> }
+                  </span>
+                  <span class="txt">
+                    <b>{{ p.nombre }}</b>
+                    <small>{{ categoria(p.categoriaId)?.nombre }}{{ p.subcategoria ? ' · ' + p.subcategoria : '' }}{{ p.activo ? '' : ' · oculto' }}</small>
+                  </span>
+                  <span class="pr">{{ p.precios[0]?.valor }}</span>
+                </button>
+              </li>
+            } @empty {
+              <li class="vacio">No hay productos con esos filtros.</li>
+            }
+          </ul>
+        </section>
+
+        <section class="editor" aria-label="Editar producto">
+          @if (seleccionado(); as p) {
+            <form (input)="marcar()" (change)="marcar()" (ngSubmit)="$event.preventDefault()">
+              <div class="cab">
+                <h2>{{ p.nombre || 'Sin nombre' }}</h2>
+                <label class="interruptor">
+                  <input type="checkbox" name="activo" [(ngModel)]="p.activo" />
+                  {{ p.activo ? 'Visible en el menú' : 'Oculto' }}
+                </label>
+              </div>
+
+              <div class="foto-editor">
+                <div class="vista">
+                  @if (p.imagen) { <img [src]="p.imagen" [alt]="p.nombre" /> } @else { <span>Sin foto</span> }
+                </div>
+                <div class="foto-acciones">
+                  <label class="boton" [class.deshabilitado]="subiendo()">
+                    {{ subiendo() ? 'Subiendo…' : p.imagen ? 'Cambiar foto' : 'Subir foto' }}
+                    <input type="file" accept="image/jpeg,image/png,image/webp" (change)="subirFoto(p, $event); $event.stopPropagation()" [disabled]="subiendo()" hidden />
+                  </label>
+                  @if (p.imagen) {
+                    <button type="button" class="boton" (click)="quitarFoto(p)">Quitar foto</button>
+                  }
+                  <small>JPG, PNG o WEBP. Se reduce sola a 1600 px antes de subir.</small>
+                </div>
+              </div>
+
+              <div class="grid2">
+                <label>Categoría
+                  <select class="campo" name="categoriaId" [(ngModel)]="p.categoriaId">
+                    @for (c of categorias(); track c.id) {
+                      <option [value]="c.id">{{ c.nombre }}</option>
+                    }
+                  </select>
+                </label>
+                <label>Subtítulo <small>(opcional)</small>
+                  <input class="campo" name="subcategoria" list="subs" [(ngModel)]="p.subcategoria" (blur)="vacioANull(p, 'subcategoria')" />
+                  <datalist id="subs">
+                    @for (s of subcategorias(); track s) { <option [value]="s"></option> }
+                  </datalist>
+                </label>
+              </div>
+
+              <label>Nombre
+                <input class="campo" name="nombre" [(ngModel)]="p.nombre" required />
+              </label>
+              <label>Detalle <small>(gramaje, presentación o variante)</small>
+                <input class="campo" name="detalle" [(ngModel)]="p.detalle" (blur)="vacioANull(p, 'detalle')" placeholder="(350GRS), 750ml, CAMARONES…" />
+              </label>
+              <label>Descripción
+                <textarea class="campo" name="descripcion" rows="3" [(ngModel)]="p.descripcion" (blur)="vacioANull(p, 'descripcion')"></textarea>
+              </label>
+
+              <fieldset>
+                <legend>Precios</legend>
+                <p class="ayuda">Escríbelos tal cual van impresos. Usa la etiqueta solo si hay varios (BOTELLA / COPA, CH / GDE…).</p>
+                @for (pr of p.precios; track $index; let i = $index) {
+                  <div class="precio-fila">
+                    <input class="campo" [name]="'etq' + i" [(ngModel)]="pr.etiqueta" placeholder="Etiqueta (opcional)" />
+                    <input class="campo" [name]="'val' + i" [(ngModel)]="pr.valor" placeholder="$0" required />
+                    <button type="button" class="boton" (click)="quitarPrecio(p, i)" [attr.aria-label]="'Quitar precio ' + (i + 1)">Quitar</button>
+                  </div>
+                }
+                <button type="button" class="boton" (click)="agregarPrecio(p)">+ Precio</button>
+              </fieldset>
+
+              <label>Opciones, sabores o salsas <small>(separadas por coma)</small>
+                <textarea class="campo" name="opciones" rows="2" [ngModel]="textoOpciones(p)" (ngModelChange)="cambiarOpciones(p, $event)"></textarea>
+              </label>
+
+              <div class="pie-editor">
+                <button type="button" class="boton" (click)="mover(p, -1)">Subir en la lista</button>
+                <button type="button" class="boton" (click)="mover(p, 1)">Bajar en la lista</button>
+                <button type="button" class="boton" (click)="duplicar(p)">Duplicar</button>
+                @if (!confirmarBorrar()) {
+                  <button type="button" class="boton peligro" (click)="confirmarBorrar.set(true)">Eliminar</button>
+                } @else {
+                  <span class="confirma">
+                    ¿Eliminar «{{ p.nombre }}»?
+                    <button type="button" class="boton peligro" (click)="borrar(p)">Sí, eliminar</button>
+                    <button type="button" class="boton" (click)="confirmarBorrar.set(false)">No</button>
+                  </span>
+                }
+              </div>
+            </form>
+          } @else {
+            <div class="vacio">
+              <p>Elige un producto de la lista para editarlo, o agrega uno nuevo.</p>
+              <button type="button" class="boton primario" (click)="agregarProducto()">+ Producto</button>
+            </div>
+          }
+        </section>
+      </div>
+    }
+
+    <!-- ================= CATEGORÍAS ================= -->
+    @if (pestana() === 'categorias') {
+      <section class="hoja">
+        <div class="hoja-cab">
+          <p class="ayuda">El orden de esta lista es el orden del menú público. Solo puedes eliminar una categoría vacía.</p>
+          <button type="button" class="boton primario" (click)="agregarCategoria()">+ Categoría</button>
+        </div>
+        @for (c of categorias(); track c.id; let primero = $first, ultimo = $last) {
+          <form class="cat" (input)="marcar()" (change)="marcar()">
+            <div class="grid3">
+              <label>Nombre <input class="campo" [name]="'n' + c.id" [(ngModel)]="c.nombre" /></label>
+              <label>Grupo
+                <select class="campo" [name]="'g' + c.id" [(ngModel)]="c.grupo">
+                  @for (g of grupos; track g.id) { <option [value]="g.id">{{ g.nombre }}</option> }
+                </select>
+              </label>
+              <div class="orden">
+                <span>{{ cuantos(c) }} productos</span>
+                <button type="button" class="boton" (click)="moverCategoria(c, -1)" [disabled]="primero" aria-label="Subir categoría">↑</button>
+                <button type="button" class="boton" (click)="moverCategoria(c, 1)" [disabled]="ultimo" aria-label="Bajar categoría">↓</button>
+                <button type="button" class="boton peligro" (click)="borrarCategoria(c)" [disabled]="cuantos(c) > 0">Eliminar</button>
+              </div>
+            </div>
+            <label>Notas <small>(una por línea)</small>
+              <textarea class="campo" [name]="'t' + c.id" rows="2" [ngModel]="lineas(c.notas)" (ngModelChange)="cambiarNotas(c, $event)"></textarea>
+            </label>
+          </form>
+        }
+      </section>
+    }
+
+    <!-- ================= DATOS DEL RESTAURANTE ================= -->
+    @if (pestana() === 'info') {
+      <form class="hoja" (input)="marcar()" (change)="marcar()">
+        <label>Lema <input class="campo" name="lema" [(ngModel)]="menu.info.lema" /></label>
+        <label>Horario de atención <small>(una línea por renglón)</small>
+          <textarea class="campo" name="horario" rows="3" [ngModel]="lineas(menu.info.horario)" (ngModelChange)="cambiarInfo('horario', $event)"></textarea>
+        </label>
+        <label>Contacto <small>(una línea por renglón)</small>
+          <textarea class="campo" name="contacto" rows="3" [ngModel]="lineas(menu.info.contacto)" (ngModelChange)="cambiarInfo('contacto', $event)"></textarea>
+        </label>
+        <label>Nota de pagos <input class="campo" name="notaPago" [(ngModel)]="menu.info.notaPago" /></label>
+        <label>Historia <textarea class="campo" name="historia" rows="4" [(ngModel)]="menu.info.historia"></textarea></label>
+        <p class="ayuda">Última vez guardado: {{ menu.actualizado }}</p>
+      </form>
+    }
+  }
+}

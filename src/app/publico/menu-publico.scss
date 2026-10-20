@@ -1,0 +1,307 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background:
+    radial-gradient(70% 30% at 50% 0%, rgba(214, 168, 82, 0.12), transparent 70%),
+    var(--noche);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.portada {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  padding: calc(28px + env(safe-area-inset-top, 0px)) 16px 18px;
+  text-align: center;
+}
+.logo {
+  width: min(260px, 64vw);
+  height: auto;
+}
+.lema {
+  margin: 0;
+  font: 400 clamp(20px, 4.6vw, 28px) / 1.2 var(--f-titulo);
+  text-wrap: balance;
+  padding: 0 6px 4px;
+}
+
+// Barra de filtros fija al hacer scroll
+.filtros {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: grid;
+  gap: 8px;
+  padding: 12px max(16px, env(safe-area-inset-left, 0px)) 12px max(16px, env(safe-area-inset-right, 0px));
+  background: rgba(13, 11, 9, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--linea);
+}
+.fila {
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+}
+.buscar {
+  position: relative;
+  display: block;
+  svg {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    width: 18px;
+    height: 18px;
+    transform: translateY(-50%);
+    fill: none;
+    stroke: var(--oro);
+    stroke-width: 2;
+    stroke-linecap: round;
+  }
+  .campo {
+    padding-left: 38px;
+    border-radius: 999px;
+  }
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+.desliza {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: 2px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.chip {
+  flex: none;
+  border: 1px solid var(--linea);
+  background: transparent;
+  color: var(--crema);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  &.fino {
+    font-weight: 500;
+    font-size: 13px;
+    padding: 5px 12px;
+    color: var(--crema-suave);
+  }
+  &.activo {
+    background: linear-gradient(180deg, var(--oro-claro), var(--oro));
+    border-color: transparent;
+    color: #1a1209;
+  }
+}
+.limpiar {
+  background: none;
+  border: 0;
+  color: var(--oro);
+  text-decoration: underline;
+  font-size: 13px;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+// La carta
+.carta {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 8px max(16px, env(safe-area-inset-left, 0px)) 24px max(16px, env(safe-area-inset-right, 0px));
+}
+.estado {
+  text-align: center;
+  padding: 48px 0;
+  color: var(--crema-suave);
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  p {
+    margin: 0;
+  }
+}
+.conteo {
+  color: var(--crema-suave);
+  font-size: 14px;
+  margin: 14px 0 0;
+}
+.seccion {
+  padding-top: 26px;
+  scroll-margin-top: 170px;
+  & + .seccion {
+    border-top: 1px solid var(--linea);
+    margin-top: 22px;
+  }
+}
+h2 {
+  font: 400 clamp(32px, 7vw, 46px) / 1.15 var(--f-titulo);
+  margin: 0 0 6px;
+  padding-bottom: 4px;
+}
+.sub {
+  font: 600 13px var(--f-ui);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--oro);
+  margin: 20px 0 6px;
+}
+.nota {
+  font: italic 400 16px/1.35 var(--f-texto);
+  color: var(--crema-suave);
+  margin: 0 0 6px;
+}
+.lista {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+.item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+  &.con-foto {
+    grid-template-columns: 84px minmax(0, 1fr);
+    align-items: start;
+  }
+}
+.foto {
+  padding: 0;
+  border: 1px solid var(--linea);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: zoom-in;
+  background: var(--carbon);
+  aspect-ratio: 1;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.cuerpo {
+  min-width: 0;
+}
+.linea {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.nombre {
+  font: 600 19px/1.25 var(--f-texto);
+  letter-spacing: 0.02em;
+  min-width: 0;
+  small {
+    font: 400 14px var(--f-texto);
+    color: var(--crema-suave);
+    margin-left: 6px;
+    letter-spacing: 0;
+  }
+}
+.puntos {
+  flex: 1;
+  min-width: 16px;
+  border-bottom: 1.5px dotted rgba(242, 237, 228, 0.35);
+  transform: translateY(-4px);
+}
+.precio,
+.precios span {
+  font: 700 18px var(--f-ui);
+  color: var(--oro);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.precios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin-top: 2px;
+  small {
+    font: 600 11px var(--f-ui);
+    letter-spacing: 0.1em;
+    color: var(--crema-suave);
+    margin-right: 2px;
+  }
+}
+.desc {
+  margin: 2px 0 0;
+  font: 400 16px/1.35 var(--f-texto);
+  color: #e3dacb;
+}
+.opciones {
+  margin: 4px 0 0;
+  font: italic 400 15px/1.35 var(--f-texto);
+  color: var(--crema-suave);
+}
+
+// Pie
+.pie {
+  max-width: 880px;
+  margin: 24px auto 0;
+  padding: 24px max(16px, env(safe-area-inset-left, 0px)) 40px max(16px, env(safe-area-inset-right, 0px));
+  border-top: 1px solid var(--linea);
+  text-align: center;
+  .info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 14px;
+  }
+  h4 {
+    font: 600 12px var(--f-ui);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--oro);
+    margin: 0 0 6px;
+  }
+  p {
+    margin: 0;
+    font: 400 16px/1.4 var(--f-texto);
+    color: var(--crema-suave);
+    overflow-wrap: anywhere;
+  }
+}
+.admin {
+  display: inline-block;
+  margin-top: 28px;
+  color: #6f665a;
+  font-size: 12px;
+}
+
+// Visor de foto
+.visor {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.92);
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 12px;
+  padding: max(16px, env(safe-area-inset-top, 0px)) 16px max(16px, env(safe-area-inset-bottom, 0px));
+  img {
+    max-height: 72vh;
+    max-width: min(92vw, 900px);
+    border-radius: 12px;
+    object-fit: contain;
+  }
+  p {
+    margin: 0;
+    font: 600 20px var(--f-texto);
+  }
+}

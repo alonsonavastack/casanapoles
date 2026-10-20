@@ -1,0 +1,3228 @@
+{
+  "version": 1,
+  "actualizado": "2026-10-20T03:34:11.561Z",
+  "info": {
+    "lema": "SOMOS TRADICIÓN, SOMOS EXPLOSIÓN; SOMOS CASA NÁPOLES.",
+    "historia": "EL MONTE VESUBIO ES UN VOLCÁN ACTIVO DE TIPO ESTRATO VOLCÁN SITUADO FRENTE A LA BAHÍA DE NÁPOLES Y AUNOS 9 KILÓMETROS DE DISTANCIA DE LA CIUDAD DE NÁPOLES, PERTENECIENTE A LA REGIÓN ITALIANA DE CAMPANIA.",
+    "horario": [
+      "MARTES-MIÉRCOLES-JUEVES 2 A 11PM",
+      "/ VIERNES Y SÁBADO 2PM-1AM / DOMINGO 1-8PM"
+    ],
+    "contacto": [
+      "facebook.com/casanapoles696/",
+      "instagram.com/casanapoles696/",
+      "712 10 10 10 7"
+    ],
+    "notaPago": "ACEPTAMOS PAGOS EN EFECTIVO, TARJETAS VISA, MASTER CARD."
+  },
+  "categorias": [
+    {
+      "id": "las-alitas-10pzas",
+      "nombre": "LAS ALITAS (10PZAS)",
+      "grupo": "comida",
+      "notas": [
+        "LAS ALITAS SE ACOMPAÑAN DE VEGETALES Y ADEREZO RANCH."
+      ],
+      "orden": 0
+    },
+    {
+      "id": "las-hamburguesas",
+      "nombre": "LAS HAMBURGUESAS",
+      "grupo": "comida",
+      "notas": [],
+      "orden": 1
+    },
+    {
+      "id": "los-cortes",
+      "nombre": "LOS CORTES",
+      "grupo": "comida",
+      "notas": [
+        "Acompañados de tortillas de maíz, cebolla a la plancha, chiles torrados, salsa picosita y papas a la francesa."
+      ],
+      "orden": 2
+    },
+    {
+      "id": "las-pizzas",
+      "nombre": "LAS PIZZAS",
+      "grupo": "comida",
+      "notas": [
+        "TODAS LAS PIZZAS SON ARTESANALES DE UN DIÁMETRO DE 35 CM CON INGREDIENTES DE ALTA CALIDAD."
+      ],
+      "orden": 3
+    },
+    {
+      "id": "las-pastas",
+      "nombre": "LAS PASTAS",
+      "grupo": "comida",
+      "notas": [],
+      "orden": 4
+    },
+    {
+      "id": "las-entradas",
+      "nombre": "LAS ENTRADAS",
+      "grupo": "comida",
+      "notas": [],
+      "orden": 5,
+      "notasSub": {
+        "QUESOS FUNDIDOS (250GRS Q. + 120GRS P.)": [
+          "LOS QUESOS FUNDIDOS INCLUYEN 5 TORTILLAS DE HARINA."
+        ]
+      }
+    },
+    {
+      "id": "las-ensaladas",
+      "nombre": "LAS ENSALADAS",
+      "grupo": "comida",
+      "notas": [],
+      "orden": 6
+    },
+    {
+      "id": "licores-y-cremas",
+      "nombre": "LICORES Y CREMAS",
+      "grupo": "barra",
+      "notas": [],
+      "orden": 7
+    },
+    {
+      "id": "los-vinos",
+      "nombre": "LOS VINOS",
+      "grupo": "barra",
+      "notas": [],
+      "orden": 8
+    },
+    {
+      "id": "los-postres",
+      "nombre": "LOS POSTRES",
+      "grupo": "comida",
+      "notas": [],
+      "orden": 9
+    },
+    {
+      "id": "los-tes",
+      "nombre": "LOS TÉS",
+      "grupo": "bebidas",
+      "notas": [],
+      "orden": 10
+    },
+    {
+      "id": "los-cafeinosos",
+      "nombre": "LOS CAFEINOSOS",
+      "grupo": "bebidas",
+      "notas": [],
+      "orden": 11
+    },
+    {
+      "id": "los-tranquilos",
+      "nombre": "LOS TRANQUILOS",
+      "grupo": "bebidas",
+      "notas": [],
+      "orden": 12
+    },
+    {
+      "id": "la-tendencia",
+      "nombre": "LA TENDENCIA",
+      "grupo": "barra",
+      "notas": [],
+      "orden": 13
+    },
+    {
+      "id": "los-clasicos",
+      "nombre": "LOS CLÁSICOS",
+      "grupo": "barra",
+      "notas": [
+        "320ml"
+      ],
+      "orden": 14
+    },
+    {
+      "id": "las-cervezas",
+      "nombre": "LAS CERVEZAS",
+      "grupo": "barra",
+      "notas": [],
+      "orden": 15
+    },
+    {
+      "id": "los-tarros",
+      "nombre": "LOS TARROS",
+      "grupo": "barra",
+      "notas": [],
+      "orden": 16
+    },
+    {
+      "id": "las-micheladas",
+      "nombre": "LAS MICHELADAS",
+      "grupo": "barra",
+      "notas": [],
+      "orden": 17
+    },
+    {
+      "id": "los-tragos",
+      "nombre": "LOS TRAGOS",
+      "grupo": "barra",
+      "notas": [],
+      "orden": 18
+    },
+    {
+      "id": "las-botellas",
+      "nombre": "LAS BOTELLAS",
+      "grupo": "barra",
+      "notas": [
+        "LAS BOTELLAS CUENTAN CON UN SERVICIO DE 4 MEZCLADORES DE 235 ML Ó 1 LITRO DE JUGO DE SU PREFERENCIA.",
+        "LAS BOTELLAS DE MEZCAL INCLUYEN MEDIAS LUNAS DE NARANJA Y CHILE EN POLVO.",
+        "LAS COPAS SE SIRVEN A 2 OZ. Incluyen un 1 mezclador de 235 ml."
+      ],
+      "orden": 19
+    }
+  ],
+  "productos": [
+    {
+      "id": "las-alitas-10pzas-alitas-ajo-parmesano",
+      "categoriaId": "las-alitas-10pzas",
+      "subcategoria": null,
+      "nombre": "ALITAS AJO PARMESANO",
+      "detalle": null,
+      "descripcion": "Combinación cremosita, con un toque al ajo",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$105"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-alitas-10pzas-alitas-mezcal",
+      "categoriaId": "las-alitas-10pzas",
+      "subcategoria": null,
+      "nombre": "ALITAS MEZCAL",
+      "detalle": null,
+      "descripcion": "Un toque agridulce y ahumado",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$105"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-alitas-10pzas-alitas-pina-hot",
+      "categoriaId": "las-alitas-10pzas",
+      "subcategoria": null,
+      "nombre": "ALITAS PIÑA HOT",
+      "detalle": null,
+      "descripcion": "A la piña picosita",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$105"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-alitas-10pzas-alitas-habanero-cream",
+      "categoriaId": "las-alitas-10pzas",
+      "subcategoria": null,
+      "nombre": "ALITAS HABANERO CREAM",
+      "detalle": null,
+      "descripcion": "Una combinación crema y picante",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$105"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-alitas-10pzas-alitas-bbq",
+      "categoriaId": "las-alitas-10pzas",
+      "subcategoria": null,
+      "nombre": "ALITAS BBQ",
+      "detalle": null,
+      "descripcion": "Un clásico agridulce",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$105"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-alitas-10pzas-alitas-buffalo",
+      "categoriaId": "las-alitas-10pzas",
+      "subcategoria": null,
+      "nombre": "ALITAS BUFFALO",
+      "detalle": null,
+      "descripcion": "Irresistiblemente picante",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$105"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-hamburguesas-res",
+      "categoriaId": "las-hamburguesas",
+      "subcategoria": null,
+      "nombre": "RES",
+      "detalle": null,
+      "descripcion": "Bollo, lechuga, jitomate, cebolla, pepinillos, carne selecta, tocino gourmet, cheddar, acompañada de papas a la francesa",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$135"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-hamburguesas-pollo",
+      "categoriaId": "las-hamburguesas",
+      "subcategoria": null,
+      "nombre": "POLLO",
+      "detalle": null,
+      "descripcion": "Pan brioche, lechuga, jitomate, cebolla, pepinillos, carne selecta, cheddar, acompañada de papas a la francesa.",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$135"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-cortes-rib-eye-350grs",
+      "categoriaId": "los-cortes",
+      "subcategoria": null,
+      "nombre": "RIB EYE",
+      "detalle": "(350GRS)",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$260"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-cortes-arrachera-250grs",
+      "categoriaId": "los-cortes",
+      "subcategoria": null,
+      "nombre": "ARRACHERA",
+      "detalle": "(250GRS)",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$260"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-cortes-t-bone-350-grs",
+      "categoriaId": "los-cortes",
+      "subcategoria": null,
+      "nombre": "T-BONE",
+      "detalle": "(350 GRS)",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$260"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-cortes-picana-300grs",
+      "categoriaId": "los-cortes",
+      "subcategoria": null,
+      "nombre": "PICAÑA",
+      "detalle": "(300GRS)",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$260"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-cortes-salmon-250grs",
+      "categoriaId": "los-cortes",
+      "subcategoria": null,
+      "nombre": "SALMÓN",
+      "detalle": "(250GRS)",
+      "descripcion": "servido sobre cama de puré de papa y ensalada",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$280"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-pizzas-la-napoles-camarones",
+      "categoriaId": "las-pizzas",
+      "subcategoria": null,
+      "nombre": "LA NÁPOLES",
+      "detalle": "CAMARONES",
+      "descripcion": "Salsa de pomodoros, mezcla de quesos y camarones.",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$280"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-pizzas-la-toscana-jamon-serrano",
+      "categoriaId": "las-pizzas",
+      "subcategoria": null,
+      "nombre": "LA TOSCANA",
+      "detalle": "JAMÓN SERRANO",
+      "descripcion": "Pomodoro, jamón serrano, mozarella, arúgula y parmesano.",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$240"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-pizzas-la-lombardia-arrachera",
+      "categoriaId": "las-pizzas",
+      "subcategoria": null,
+      "nombre": "LA LOMBARDÍA",
+      "detalle": "ARRACHERA",
+      "descripcion": "Salsa de pomodoros, mix de quesos, arrachera, pimientos y jalapeños.",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$240"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-pizzas-la-sicilia-4-quesos",
+      "categoriaId": "las-pizzas",
+      "subcategoria": null,
+      "nombre": "LA SICILIA",
+      "detalle": "4 QUESOS",
+      "descripcion": "De los famosos 4 quesos que se derriten en tu boca con salsa pomodoro.",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$180"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-pizzas-la-fungi-portobello",
+      "categoriaId": "las-pizzas",
+      "subcategoria": null,
+      "nombre": "LA FUNGI",
+      "detalle": "PORTOBELLO",
+      "descripcion": "Salsa de pomodoros, mozarella, portobellos, tomate cherry, queso de cabra y arúgula.",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$180"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-pizzas-la-abruzzo-salami",
+      "categoriaId": "las-pizzas",
+      "subcategoria": null,
+      "nombre": "LA ABRUZZO",
+      "detalle": "SALAMI",
+      "descripcion": "Pomodoro, rebanadas de salami, queso mozarella y aceitunas negras.",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$160"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-pizzas-la-venecia-vegetales",
+      "categoriaId": "las-pizzas",
+      "subcategoria": null,
+      "nombre": "LA VENECIA",
+      "detalle": "VEGETALES",
+      "descripcion": "Pomodoros condimentados, pimientos mixtos, champiñones, aceitunas y mezcla de quesos.",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$160"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-pizzas-la-capri-hawaiana",
+      "categoriaId": "las-pizzas",
+      "subcategoria": null,
+      "nombre": "LA CAPRI",
+      "detalle": "HAWAIANA",
+      "descripcion": "Salsa de pomodoros, trocitos de piña, jamón y mozarella.",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$160"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-pizzas-la-veneto-pepperoni",
+      "categoriaId": "las-pizzas",
+      "subcategoria": null,
+      "nombre": "LA VENETO",
+      "detalle": "PEPPERONI",
+      "descripcion": "Clásicos pomodoros condimentados, mozarella y rodajas de pepperoni.",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$160"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-pizzas-la-margherita",
+      "categoriaId": "las-pizzas",
+      "subcategoria": null,
+      "nombre": "LA MARGHERITA",
+      "detalle": null,
+      "descripcion": "Elemental de italia; pomodoro, mozarrella, parmesano y albahaca con un toque de oliva.",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$140"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-pastas-ravioli-200-grs",
+      "categoriaId": "las-pastas",
+      "subcategoria": null,
+      "nombre": "RAVIOLI",
+      "detalle": "(200 GRS)",
+      "descripcion": "Al pomodoro y queso fundido.",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$145"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-pastas-espaguetti-a-la-bolonesa-250-grs",
+      "categoriaId": "las-pastas",
+      "subcategoria": null,
+      "nombre": "ESPAGUETTI A LA BOLOÑESA",
+      "detalle": "(250 GRS)",
+      "descripcion": "El plato de pasta más apreciado en el mundo; salsa, carne y parmesano.",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$125"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-pastas-espaguetti-al-burro-150-grs",
+      "categoriaId": "las-pastas",
+      "subcategoria": null,
+      "nombre": "ESPAGUETTI AL BURRO",
+      "detalle": "(150 GRS)",
+      "descripcion": "Sencillo, delicado y delicioso. Espaguettis bañados en mantequilla.",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$75"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-pastas-fetuccini-alfredo-con-camarones-250-grs",
+      "categoriaId": "las-pastas",
+      "subcategoria": null,
+      "nombre": "FETUCCINI ALFREDO CON CAMARONES",
+      "detalle": "(250 GRS)",
+      "descripcion": "El queso, la crema y la mantequilla se derriten para formar una rica salsa acompañada de camarones.",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$145"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-entradas-rajas-con-queso",
+      "categoriaId": "las-entradas",
+      "subcategoria": "EMPANADAS (150GRS)",
+      "nombre": "Rajas con queso",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$39"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-entradas-espinacas-con-queso",
+      "categoriaId": "las-entradas",
+      "subcategoria": "EMPANADAS (150GRS)",
+      "nombre": "Espinacas con queso",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$39"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-entradas-carne-con-queso",
+      "categoriaId": "las-entradas",
+      "subcategoria": "EMPANADAS (150GRS)",
+      "nombre": "Carne con queso",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$55"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-entradas-queso-con-chistorra",
+      "categoriaId": "las-entradas",
+      "subcategoria": "QUESOS FUNDIDOS (250GRS Q. + 120GRS P.)",
+      "nombre": "Queso con chistorra",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$135"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-entradas-queso-con-chorizo",
+      "categoriaId": "las-entradas",
+      "subcategoria": "QUESOS FUNDIDOS (250GRS Q. + 120GRS P.)",
+      "nombre": "Queso con chorizo",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$135"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-entradas-queso-fundido",
+      "categoriaId": "las-entradas",
+      "subcategoria": "QUESOS FUNDIDOS (250GRS Q. + 120GRS P.)",
+      "nombre": "Queso fundido",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$120"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-entradas-bolitas-crocche-12-pzs",
+      "categoriaId": "las-entradas",
+      "subcategoria": "SNACKS (300 GRS)",
+      "nombre": "Bolitas Crocchè (12 pzs)",
+      "detalle": null,
+      "descripcion": "De la receta napolitana, bolitas de papa y queso",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$65"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-entradas-papas-a-la-francesa",
+      "categoriaId": "las-entradas",
+      "subcategoria": "SNACKS (300 GRS)",
+      "nombre": "Papas a la francesa",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$55"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-entradas-papas-gajo",
+      "categoriaId": "las-entradas",
+      "subcategoria": "SNACKS (300 GRS)",
+      "nombre": "Papas Gajo",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$60"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-entradas-dedos-de-queso-7-pzs",
+      "categoriaId": "las-entradas",
+      "subcategoria": "SNACKS (300 GRS)",
+      "nombre": "Dedos de queso (7 PZS)",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$95"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-entradas-boneless-10pzs",
+      "categoriaId": "las-entradas",
+      "subcategoria": "SNACKS (300 GRS)",
+      "nombre": "Boneless (10pzs)",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$120"
+        }
+      ],
+      "opciones": [
+        "Parmesano",
+        "Mezcal",
+        "Piña hot",
+        "Habanero cream",
+        "BBQ",
+        "Búfalo"
+      ],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-ensaladas-caprese",
+      "categoriaId": "las-ensaladas",
+      "subcategoria": null,
+      "nombre": "CAPRESE",
+      "detalle": null,
+      "descripcion": "Compuesta de rodajas de tomate y de panela fresco",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$115"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-ensaladas-ensalada-napoles",
+      "categoriaId": "las-ensaladas",
+      "subcategoria": null,
+      "nombre": "ENSALADA NÁPOLES",
+      "detalle": null,
+      "descripcion": "Mix de lechugas, espinacas, frutos rojos, almendras, queso de cabra y aderezo de la casa picosito",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$115"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-ensaladas-cesar",
+      "categoriaId": "las-ensaladas",
+      "subcategoria": null,
+      "nombre": "CÉSAR",
+      "detalle": null,
+      "descripcion": "Lechuga, crutones, con salsa especial de aceite de oliva, anchoas y queso parmesano",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$115"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-ensaladas-cesar-con-pollo",
+      "categoriaId": "las-ensaladas",
+      "subcategoria": null,
+      "nombre": "CÉSAR CON POLLO",
+      "detalle": null,
+      "descripcion": "La original con deliciosa pechuga de pollo",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$145"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-ensaladas-cesar-con-arrachera",
+      "categoriaId": "las-ensaladas",
+      "subcategoria": null,
+      "nombre": "CÉSAR CON ARRACHERA",
+      "detalle": null,
+      "descripcion": "La original con deliciosa arrachera",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$145"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "licores-y-cremas-anis",
+      "categoriaId": "licores-y-cremas",
+      "subcategoria": null,
+      "nombre": "ANÍS",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$80"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "licores-y-cremas-copa-licor-43",
+      "categoriaId": "licores-y-cremas",
+      "subcategoria": null,
+      "nombre": "COPA LICOR 43",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$95"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "licores-y-cremas-amaretto-disaronno",
+      "categoriaId": "licores-y-cremas",
+      "subcategoria": null,
+      "nombre": "AMARETTO DISARONNO",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$95"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "licores-y-cremas-baileys",
+      "categoriaId": "licores-y-cremas",
+      "subcategoria": null,
+      "nombre": "BAILEYS",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$95"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "licores-y-cremas-carajillo",
+      "categoriaId": "licores-y-cremas",
+      "subcategoria": null,
+      "nombre": "CARAJILLO",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$117"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "licores-y-cremas-carajillo-oaxaqueno",
+      "categoriaId": "licores-y-cremas",
+      "subcategoria": null,
+      "nombre": "CARAJILLO OAXAQUEÑO",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$129"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "licores-y-cremas-alfonso-xiii",
+      "categoriaId": "licores-y-cremas",
+      "subcategoria": null,
+      "nombre": "ALFONSO XIII",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$90"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-vinos-el-casillero-del-diablo-botella-de-750ml",
+      "categoriaId": "los-vinos",
+      "subcategoria": null,
+      "nombre": "EL CASILLERO DEL DIABLO",
+      "detalle": "Botella de 750ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$425"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-vinos-tinto-ruby-botella-de-750ml",
+      "categoriaId": "los-vinos",
+      "subcategoria": null,
+      "nombre": "TINTO RUBY",
+      "detalle": "Botella de 750ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$310"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-vinos-tinto-nosotros-botella-de-750ml",
+      "categoriaId": "los-vinos",
+      "subcategoria": null,
+      "nombre": "TINTO NOSOTROS",
+      "detalle": "Botella de 750ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$310"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-vinos-riunite-botella-de-750ml",
+      "categoriaId": "los-vinos",
+      "subcategoria": null,
+      "nombre": "RIUNITE",
+      "detalle": "Botella de 750ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$305"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-vinos-riunite-botella-de-187ml",
+      "categoriaId": "los-vinos",
+      "subcategoria": null,
+      "nombre": "RIUNITE",
+      "detalle": "Botella de 187ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$90"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-vinos-sangre-de-toro-botella-de-187ml",
+      "categoriaId": "los-vinos",
+      "subcategoria": null,
+      "nombre": "SANGRE DE TORO",
+      "detalle": "Botella de 187ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$120"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-vinos-santa-rita-120-rva-esp-botella-de-187ml",
+      "categoriaId": "los-vinos",
+      "subcategoria": null,
+      "nombre": "SANTA RITA 120 Rva. Esp.",
+      "detalle": "Botella de 187ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$95"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-vinos-copa-clericot",
+      "categoriaId": "los-vinos",
+      "subcategoria": null,
+      "nombre": "COPA CLERICOT",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$85"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-vinos-jarra-de-clericot",
+      "categoriaId": "los-vinos",
+      "subcategoria": null,
+      "nombre": "JARRA DE CLERICOT",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$285"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-postres-tiramisu",
+      "categoriaId": "los-postres",
+      "subcategoria": null,
+      "nombre": "TIRAMISÚ",
+      "detalle": null,
+      "descripcion": "El famoso italiano, biscochos bañados en cafe y queso mascarpone.",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$70"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-postres-pizza-de-crema-de-cacao",
+      "categoriaId": "los-postres",
+      "subcategoria": null,
+      "nombre": "PIZZA DE CREMA DE CACAO",
+      "detalle": null,
+      "descripcion": "Con deliciosos frutos rojos",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$120"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-postres-pay-de-limon",
+      "categoriaId": "los-postres",
+      "subcategoria": null,
+      "nombre": "PAY DE LIMÓN",
+      "detalle": null,
+      "descripcion": "Un postre frío y refrescante",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$55"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-postres-pastel-de-chocolate",
+      "categoriaId": "los-postres",
+      "subcategoria": null,
+      "nombre": "PASTEL DE CHOCOLATE",
+      "detalle": null,
+      "descripcion": "Hecho con chocolate suizo.",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$75"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-postres-panque-casero",
+      "categoriaId": "los-postres",
+      "subcategoria": null,
+      "nombre": "PANQUÉ CASERO",
+      "detalle": null,
+      "descripcion": "Pregunta por disponibilidad de sabores.",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$70"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-postres-flan-casero",
+      "categoriaId": "los-postres",
+      "subcategoria": null,
+      "nombre": "FLAN CASERO",
+      "detalle": null,
+      "descripcion": "Totalmente casero con base de queso crema.",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$70"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tes-manzanilla",
+      "categoriaId": "los-tes",
+      "subcategoria": null,
+      "nombre": "MANZANILLA",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$27"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tes-hiebabuena",
+      "categoriaId": "los-tes",
+      "subcategoria": null,
+      "nombre": "HIEBABUENA",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$27"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tes-limon",
+      "categoriaId": "los-tes",
+      "subcategoria": null,
+      "nombre": "LIMÓN",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$27"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tes-frutos-rojos",
+      "categoriaId": "los-tes",
+      "subcategoria": null,
+      "nombre": "FRUTOS ROJOS",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$27"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-cafeinosos-esspreso",
+      "categoriaId": "los-cafeinosos",
+      "subcategoria": null,
+      "nombre": "ESSPRESO",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$29"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-cafeinosos-americano",
+      "categoriaId": "los-cafeinosos",
+      "subcategoria": null,
+      "nombre": "AMERICANO",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$29"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-cafeinosos-descafeinado",
+      "categoriaId": "los-cafeinosos",
+      "subcategoria": null,
+      "nombre": "DESCAFEINADO",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$39"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-cafeinosos-irlandes-18",
+      "categoriaId": "los-cafeinosos",
+      "subcategoria": null,
+      "nombre": "IRLANDÉS 18+",
+      "detalle": null,
+      "descripcion": "A base de whisky",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$110"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-cafeinosos-capuccino",
+      "categoriaId": "los-cafeinosos",
+      "subcategoria": null,
+      "nombre": "CAPUCCINO",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$52"
+        }
+      ],
+      "opciones": [
+        "Crema irlandesa",
+        "Amaretto",
+        "Rompope",
+        "Cajeta",
+        "Chai"
+      ],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tranquilos-coca-cola",
+      "categoriaId": "los-tranquilos",
+      "subcategoria": "LATA 355 ML",
+      "nombre": "COCA COLA",
+      "detalle": null,
+      "descripcion": "Normal, Light, Zero",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$28"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tranquilos-fanta",
+      "categoriaId": "los-tranquilos",
+      "subcategoria": "LATA 355 ML",
+      "nombre": "FANTA",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$26"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tranquilos-sprite",
+      "categoriaId": "los-tranquilos",
+      "subcategoria": "LATA 355 ML",
+      "nombre": "SPRITE",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$26"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tranquilos-sidral-mundet",
+      "categoriaId": "los-tranquilos",
+      "subcategoria": "LATA 355 ML",
+      "nombre": "SIDRAL MUNDET",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$26"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tranquilos-squirt",
+      "categoriaId": "los-tranquilos",
+      "subcategoria": "LATA 355 ML",
+      "nombre": "SQUIRT",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$26"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tranquilos-penafiel-mineral",
+      "categoriaId": "los-tranquilos",
+      "subcategoria": "LATA 355 ML",
+      "nombre": "PEÑAFIEL MINERAL",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$26"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tranquilos-sangria",
+      "categoriaId": "los-tranquilos",
+      "subcategoria": "LATA 355 ML",
+      "nombre": "SANGRIA",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$28"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tranquilos-aguafiel-500-ml",
+      "categoriaId": "los-tranquilos",
+      "subcategoria": "LATA 355 ML",
+      "nombre": "AGUAFIEL 500 ML",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$20"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tranquilos-velvet",
+      "categoriaId": "los-tranquilos",
+      "subcategoria": "VELVET",
+      "nombre": "VELVET",
+      "detalle": null,
+      "descripcion": "Soda gourmet con frutos frescos 275 ML",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$69"
+        }
+      ],
+      "opciones": [
+        "TORONJA",
+        "MANDARINA",
+        "LYCHEE",
+        "MARACUYÁ",
+        "FRAMBUESA",
+        "GUANÁBANA"
+      ],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tranquilos-limonada-clasica-320-ml",
+      "categoriaId": "los-tranquilos",
+      "subcategoria": "LIMONADAS Y NARANJADA (320 ML)",
+      "nombre": "LIMONADA CLÁSICA 320 ML",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$37"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tranquilos-pink-lemonade-320-ml",
+      "categoriaId": "los-tranquilos",
+      "subcategoria": "LIMONADAS Y NARANJADA (320 ML)",
+      "nombre": "PINK LEMONADE 320 ML",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$37"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tranquilos-kiwi-lemonade-320-ml",
+      "categoriaId": "los-tranquilos",
+      "subcategoria": "LIMONADAS Y NARANJADA (320 ML)",
+      "nombre": "KIWI LEMONADE 320 ML",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$37"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tranquilos-blue-lemonade-320-ml",
+      "categoriaId": "los-tranquilos",
+      "subcategoria": "LIMONADAS Y NARANJADA (320 ML)",
+      "nombre": "BLUE LEMONADE 320 ML",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$37"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tranquilos-naranjada-320-ml",
+      "categoriaId": "los-tranquilos",
+      "subcategoria": "LIMONADAS Y NARANJADA (320 ML)",
+      "nombre": "NARANJADA 320 ML",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$37"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tranquilos-pinada-320-ml",
+      "categoriaId": "los-tranquilos",
+      "subcategoria": "LIMONADAS Y NARANJADA (320 ML)",
+      "nombre": "PIÑADA 320 ML",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$65"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tranquilos-aguas-frescas",
+      "categoriaId": "los-tranquilos",
+      "subcategoria": "AGUAS FRESCAS",
+      "nombre": "AGUAS FRESCAS",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "VASO 1/2 lt",
+          "valor": "$40"
+        },
+        {
+          "etiqueta": "TARRO 1 lt",
+          "valor": "$70"
+        }
+      ],
+      "opciones": [
+        "COCO",
+        "MARACUYÁ",
+        "JAMAICA",
+        "CEBADA"
+      ],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "la-tendencia-azulito-320ml",
+      "categoriaId": "la-tendencia",
+      "subcategoria": null,
+      "nombre": "AZULITO",
+      "detalle": "320ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$80"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "la-tendencia-pitufina-320ml",
+      "categoriaId": "la-tendencia",
+      "subcategoria": null,
+      "nombre": "PITUFINA",
+      "detalle": "320ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$80"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "la-tendencia-hulk-320ml",
+      "categoriaId": "la-tendencia",
+      "subcategoria": null,
+      "nombre": "HULK",
+      "detalle": "320ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$80"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "la-tendencia-eyaculada-320ml",
+      "categoriaId": "la-tendencia",
+      "subcategoria": null,
+      "nombre": "EYACULADA",
+      "detalle": "320ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$80"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "la-tendencia-harley-quinn-320ml",
+      "categoriaId": "la-tendencia",
+      "subcategoria": null,
+      "nombre": "HARLEY QUINN",
+      "detalle": "320ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$80"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "la-tendencia-cantarito-320ml",
+      "categoriaId": "la-tendencia",
+      "subcategoria": null,
+      "nombre": "CANTARITO",
+      "detalle": "320ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$115"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "la-tendencia-cantarito-jumbo-12lts",
+      "categoriaId": "la-tendencia",
+      "subcategoria": null,
+      "nombre": "CANTARITO JUMBO",
+      "detalle": "12LTS",
+      "descripcion": "(2 botellas de tequila 30-30 Reposado de 1L)",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$1999"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "la-tendencia-bandera",
+      "categoriaId": "la-tendencia",
+      "subcategoria": null,
+      "nombre": "BANDERA",
+      "detalle": null,
+      "descripcion": "(shot de limón, sangrita +$ tequila a elección)",
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$45"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-clasicos-godfather",
+      "categoriaId": "los-clasicos",
+      "subcategoria": null,
+      "nombre": "GODFATHER",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$150"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-clasicos-negroni",
+      "categoriaId": "los-clasicos",
+      "subcategoria": null,
+      "nombre": "NEGRONI",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$150"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-clasicos-martini",
+      "categoriaId": "los-clasicos",
+      "subcategoria": null,
+      "nombre": "MARTINI",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$150"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-clasicos-tom-collins",
+      "categoriaId": "los-clasicos",
+      "subcategoria": null,
+      "nombre": "TOM COLLINS",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$120"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-clasicos-pina-colada",
+      "categoriaId": "los-clasicos",
+      "subcategoria": null,
+      "nombre": "PIÑA COLADA",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$120"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-clasicos-daiquiri-clasico",
+      "categoriaId": "los-clasicos",
+      "subcategoria": null,
+      "nombre": "DAIQUIRI CLÁSICO",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$120"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-clasicos-mojito-clasico",
+      "categoriaId": "los-clasicos",
+      "subcategoria": null,
+      "nombre": "MOJITO CLÁSICO",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$120"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-clasicos-margarita-clasica",
+      "categoriaId": "los-clasicos",
+      "subcategoria": null,
+      "nombre": "MARGARITA CLÁSICA",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$115"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-cervezas-dos-equis-lager-325-ml",
+      "categoriaId": "las-cervezas",
+      "subcategoria": null,
+      "nombre": "DOS EQUIS LAGER",
+      "detalle": "325 ML",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$35"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-cervezas-indio-325-ml",
+      "categoriaId": "las-cervezas",
+      "subcategoria": null,
+      "nombre": "INDIO",
+      "detalle": "325 ML",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$35"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-cervezas-tecate-original-325-ml",
+      "categoriaId": "las-cervezas",
+      "subcategoria": null,
+      "nombre": "TECATE ORIGINAL",
+      "detalle": "325 ML",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$35"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-cervezas-bohemia-pilsner-355-ml",
+      "categoriaId": "las-cervezas",
+      "subcategoria": null,
+      "nombre": "BOHEMIA PILSNER",
+      "detalle": "355 ML",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$42"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-cervezas-bohemia-vienna-355-ml",
+      "categoriaId": "las-cervezas",
+      "subcategoria": null,
+      "nombre": "BOHEMIA VIENNA",
+      "detalle": "355 ML",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$42"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-cervezas-heineken-355-ml",
+      "categoriaId": "las-cervezas",
+      "subcategoria": null,
+      "nombre": "HEINEKEN",
+      "detalle": "355 ML",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$35"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-cervezas-modelo-especial-355-ml",
+      "categoriaId": "las-cervezas",
+      "subcategoria": null,
+      "nombre": "MODELO ESPECIAL",
+      "detalle": "355 ML",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$42"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-cervezas-negra-modelo-355-ml",
+      "categoriaId": "las-cervezas",
+      "subcategoria": null,
+      "nombre": "NEGRA MODELO",
+      "detalle": "355 ML",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$42"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-cervezas-corona-clara-355-ml",
+      "categoriaId": "las-cervezas",
+      "subcategoria": null,
+      "nombre": "CORONA CLARA",
+      "detalle": "355 ML",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$35"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-cervezas-victoria-355-ml",
+      "categoriaId": "las-cervezas",
+      "subcategoria": null,
+      "nombre": "VICTORIA",
+      "detalle": "355 ML",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$35"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-cervezas-michelob-ultra-355-ml",
+      "categoriaId": "las-cervezas",
+      "subcategoria": null,
+      "nombre": "MICHELOB ULTRA",
+      "detalle": "355 ML",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$42"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-cervezas-stella-artois-355-ml",
+      "categoriaId": "las-cervezas",
+      "subcategoria": null,
+      "nombre": "STELLA ARTOIS",
+      "detalle": "355 ML",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$42"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-cervezas-strongbow-red-berries-330ml",
+      "categoriaId": "las-cervezas",
+      "subcategoria": null,
+      "nombre": "STRONGBOW RED BERRIES",
+      "detalle": "330ML",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$40"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-cervezas-dos-equis-lager-1-2l",
+      "categoriaId": "las-cervezas",
+      "subcategoria": null,
+      "nombre": "DOS EQUIS LAGER",
+      "detalle": "1.2L",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$82"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-cervezas-indio-1-2l",
+      "categoriaId": "las-cervezas",
+      "subcategoria": null,
+      "nombre": "INDIO",
+      "detalle": "1.2L",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$82"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-cervezas-tecate-1-2l",
+      "categoriaId": "las-cervezas",
+      "subcategoria": null,
+      "nombre": "TECATE",
+      "detalle": "1.2L",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$82"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-cervezas-heineken-1l",
+      "categoriaId": "las-cervezas",
+      "subcategoria": null,
+      "nombre": "HEINEKEN",
+      "detalle": "1L",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$85"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tarros-salado",
+      "categoriaId": "los-tarros",
+      "subcategoria": null,
+      "nombre": "SALADO",
+      "detalle": null,
+      "descripcion": "Limón y sal",
+      "precios": [
+        {
+          "etiqueta": "CH",
+          "valor": "$13"
+        },
+        {
+          "etiqueta": "GDE",
+          "valor": "$18"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tarros-michelado",
+      "categoriaId": "los-tarros",
+      "subcategoria": null,
+      "nombre": "MICHELADO",
+      "detalle": null,
+      "descripcion": "Salsas Petroleo y clamato",
+      "precios": [
+        {
+          "etiqueta": "CH",
+          "valor": "$25"
+        },
+        {
+          "etiqueta": "GDE",
+          "valor": "$45"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tarros-cubano",
+      "categoriaId": "los-tarros",
+      "subcategoria": null,
+      "nombre": "CUBANO",
+      "detalle": null,
+      "descripcion": "Salsas petroleo y sal",
+      "precios": [
+        {
+          "etiqueta": "CH",
+          "valor": "$25"
+        },
+        {
+          "etiqueta": "GDE",
+          "valor": "$45"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-micheladas-miche-coco",
+      "categoriaId": "las-micheladas",
+      "subcategoria": null,
+      "nombre": "MICHE COCO",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "500ml",
+          "valor": "$50"
+        },
+        {
+          "etiqueta": "1L",
+          "valor": "$100"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-micheladas-miche-mango",
+      "categoriaId": "las-micheladas",
+      "subcategoria": null,
+      "nombre": "MICHE MANGO",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "500ml",
+          "valor": "$50"
+        },
+        {
+          "etiqueta": "1L",
+          "valor": "$100"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-micheladas-miche-tamarindo",
+      "categoriaId": "las-micheladas",
+      "subcategoria": null,
+      "nombre": "MICHE TAMARINDO",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "500ml",
+          "valor": "$50"
+        },
+        {
+          "etiqueta": "1L",
+          "valor": "$100"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-micheladas-miche-fresa",
+      "categoriaId": "las-micheladas",
+      "subcategoria": null,
+      "nombre": "MICHE FRESA",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "500ml",
+          "valor": "$50"
+        },
+        {
+          "etiqueta": "1L",
+          "valor": "$100"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-micheladas-miche-clamato",
+      "categoriaId": "las-micheladas",
+      "subcategoria": null,
+      "nombre": "MICHE CLAMATO",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "500ml",
+          "valor": "$50"
+        },
+        {
+          "etiqueta": "1L",
+          "valor": "$100"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tragos-mezcal-320-ml",
+      "categoriaId": "los-tragos",
+      "subcategoria": null,
+      "nombre": "MEZCAL",
+      "detalle": "320 ML",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$115"
+        }
+      ],
+      "opciones": [
+        "Mezcalina tamarindo",
+        "Mezcalina jamaica",
+        "Mezcalina verde",
+        "Mezcalina maracuyá"
+      ],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tragos-vodka-320-ml",
+      "categoriaId": "los-tragos",
+      "subcategoria": null,
+      "nombre": "VODKA",
+      "detalle": "320 ML",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$120"
+        }
+      ],
+      "opciones": [
+        "Bloody Mary",
+        "Tropical",
+        "Vodka tonic",
+        "Cosmopolitan"
+      ],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tragos-ginebra-320-ml",
+      "categoriaId": "los-tragos",
+      "subcategoria": null,
+      "nombre": "GINEBRA",
+      "detalle": "320 ML",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$120"
+        }
+      ],
+      "opciones": [
+        "Gin tonic",
+        "Gin maracuyá",
+        "Gin kiwi",
+        "Gin frutos rojos"
+      ],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tragos-ron-320-ml",
+      "categoriaId": "los-tragos",
+      "subcategoria": null,
+      "nombre": "RON",
+      "detalle": "320 ML",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$120"
+        }
+      ],
+      "opciones": [
+        "Daiquiri de kiwi",
+        "Daiquiri frutos rojos",
+        "Mojito azul",
+        "Mojito frutos rojos",
+        "Mojito pepino"
+      ],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "los-tragos-tequila-320-ml",
+      "categoriaId": "los-tragos",
+      "subcategoria": null,
+      "nombre": "TEQUILA",
+      "detalle": "320 ML",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": null,
+          "valor": "$115"
+        }
+      ],
+      "opciones": [
+        "Margarita chocolate",
+        "Margarita coco",
+        "Margarita fresa"
+      ],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-union-uno-joven-700ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "MEZCAL",
+      "nombre": "UNIÓN UNO JÓVEN",
+      "detalle": "700ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$1350"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$118"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-400-conejos-espadin-750ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "MEZCAL",
+      "nombre": "400 CONEJOS ESPADÍN",
+      "detalle": "750ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$1185"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$118"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-montelobos-espadin-750ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "MEZCAL",
+      "nombre": "MONTELOBOS ESPADÍN",
+      "detalle": "750ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$1500"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$125"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-de-la-casa",
+      "categoriaId": "las-botellas",
+      "subcategoria": "MEZCAL",
+      "nombre": "DE LA CASA",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "---"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$65"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-don-julio-70-700ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "TEQUILA",
+      "nombre": "DON JULIO 70",
+      "detalle": "700ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$1600"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$155"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-1800-cristalino-700ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "TEQUILA",
+      "nombre": "1800 CRISTALINO",
+      "detalle": "700ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$1350"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$130"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-1800-anejo-700ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "TEQUILA",
+      "nombre": "1800 AÑEJO",
+      "detalle": "700ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$1200"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$110"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-maestro-dobel-diamante-700ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "TEQUILA",
+      "nombre": "MAESTRO DOBEL DIAMANTE",
+      "detalle": "700ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$1340"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$118"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-tradicional-cristalino-750ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "TEQUILA",
+      "nombre": "TRADICIONAL CRISTALINO",
+      "detalle": "750ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$1189"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$100"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-30-30-reposado-1l",
+      "categoriaId": "las-botellas",
+      "subcategoria": "TEQUILA",
+      "nombre": "30 30 REPOSADO",
+      "detalle": "1l",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$850"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$75"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-30-30-blanco-1l",
+      "categoriaId": "las-botellas",
+      "subcategoria": "TEQUILA",
+      "nombre": "30 30 BLANCO",
+      "detalle": "1l",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$800"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$70"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-centenario-reposado-750ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "TEQUILA",
+      "nombre": "CENTENARIO REPOSADO",
+      "detalle": "750ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$780"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$67"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-tradicional-plata-695ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "TEQUILA",
+      "nombre": "TRADICIONAL PLATA",
+      "detalle": "695ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$890"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$67"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-zacapa-solera-23-750ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "RON",
+      "nombre": "ZACAPA SOLERA 23",
+      "detalle": "750ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$1800"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$160"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-matusalem-gran-reserva-750ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "RON",
+      "nombre": "MATUSALEM GRAN RESERVA",
+      "detalle": "750ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$900"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$80"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-matusalem-clasico-750ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "RON",
+      "nombre": "MATUSALEM CLÁSICO",
+      "detalle": "750ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$750"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$70"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-bacardi-blanco-750ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "RON",
+      "nombre": "BACARDÍ BLANCO",
+      "detalle": "750ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$688"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$67"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-grey-goose-750ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "VODKA",
+      "nombre": "GREY GOOSE",
+      "detalle": "750ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$1450"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$125"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-absolut-original-750ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "VODKA",
+      "nombre": "ABSOLUT ORIGINAL",
+      "detalle": "750ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$835"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$80"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-smirnoff-original-750ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "VODKA",
+      "nombre": "SMIRNOFF ORIGINAL",
+      "detalle": "750ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$835"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$80"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-smirnoff-tamarindo-750ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "VODKA",
+      "nombre": "SMIRNOFF TAMARINDO",
+      "detalle": "750ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$835"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$80"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-tanqueray-london-dry-750ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "GINEBRA",
+      "nombre": "TANQUERAY LONDON DRY",
+      "detalle": "750ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$1240"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$120"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-beefeater-dry-750ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "GINEBRA",
+      "nombre": "BEEFEATER DRY",
+      "detalle": "750ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$1078"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$95"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-de-la-casa-2",
+      "categoriaId": "las-botellas",
+      "subcategoria": "GINEBRA",
+      "nombre": "DE LA CASA",
+      "detalle": null,
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "--"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$65"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-buchanan-s-12-750ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "WHISKY",
+      "nombre": "BUCHANAN'S 12",
+      "detalle": "750ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$1500"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$150"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-black-label-750ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "WHISKY",
+      "nombre": "BLACK LABEL",
+      "detalle": "750ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$1550"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$150"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-red-label-750ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "WHISKY",
+      "nombre": "RED LABEL",
+      "detalle": "750ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$870"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$69"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-torres-v-750ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "BRANDY",
+      "nombre": "TORRES V",
+      "detalle": "750mL",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "65"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$710"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-torres-x-750ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "BRANDY",
+      "nombre": "TORRES X",
+      "detalle": "750mL",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "80"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$900"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-hennessy-vsop-700ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "COGNAC",
+      "nombre": "HENNESSY VSOP",
+      "detalle": "700ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$1990"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$155"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    },
+    {
+      "id": "las-botellas-martell-vsop-700ml",
+      "categoriaId": "las-botellas",
+      "subcategoria": "COGNAC",
+      "nombre": "MARTELL VSOP",
+      "detalle": "700ml",
+      "descripcion": null,
+      "precios": [
+        {
+          "etiqueta": "BOTELLA",
+          "valor": "$1890"
+        },
+        {
+          "etiqueta": "COPA",
+          "valor": "$150"
+        }
+      ],
+      "opciones": [],
+      "imagen": null,
+      "activo": true
+    }
+  ]
+}

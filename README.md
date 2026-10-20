@@ -1,59 +1,67 @@
-# Restaurante
+# Casa Nápoles · Menú en línea
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.2.3.
+Menú público con filtros y panel para editar productos y subir fotos.
+Angular 22 en el navegador y un archivo PHP pequeño en cPanel que guarda el menú y las imágenes.
 
-## Development server
+- Menú público: `https://einsteinmx.com/restaurante/`
+- Panel: `https://einsteinmx.com/restaurante/#/admin`
 
-To start a local development server, run:
+## Cómo está armado
 
-```bash
-ng serve
-```
+| Carpeta | Qué hay |
+|---|---|
+| `src/` | La app de Angular (menú público en `publico/`, panel en `admin/`). |
+| `api/index.php` | La API que corre en cPanel: leer menú, entrar, guardar y subir fotos. |
+| `api/semilla.json` | El menú inicial, generado desde `datos/menu-casa-napoles.md`. |
+| `servidor/uploads/.htaccess` | Protección de la carpeta de fotos en el hosting. |
+| `scripts/` | Utilidades: pasar el md a JSON, crear la contraseña, servidor de prueba y empaquetado. |
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+En el hosting el menú se guarda en `api/datos/menu.json` y las fotos en `uploads/`.
+Cada vez que guardas, se deja un respaldo en `api/datos/respaldo-*.json` (los últimos 20).
 
-## Code scaffolding
+## Primera vez en cPanel
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1. Elige tu contraseña del panel (mínimo 8 caracteres). Reemplaza la de prueba:
+   ```bash
+   npm run clave -- "tu contraseña"
+   ```
+2. Genera el paquete:
+   ```bash
+   npm run build
+   ```
+3. En el Administrador de archivos de cPanel crea la carpeta `restaurante` dentro de la carpeta de **einsteinmx.com**
+   (la que sirve `https://einsteinmx.com/`; normalmente `public_html` o `einsteinmx.com`).
+4. Sube **todo el contenido** de `dist/para-cpanel/` a esa carpeta `restaurante`.
+   Lo más fácil: comprime `dist/para-cpanel` en un .zip, súbelo con **Cargar** y usa **Extraer**.
+   Revisa que quedaron los archivos ocultos `.htaccess` (en Configuración de cPanel activa «Mostrar archivos ocultos»).
+5. Abre `https://einsteinmx.com/restaurante/` y luego `#/admin` para entrar.
 
-```bash
-ng generate component component-name
-```
+## Actualizar la app más adelante
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Repite `npm run build` y sube de nuevo `dist/para-cpanel/`. El paquete **no** lleva `api/datos/` ni fotos,
+así que subirlo nunca borra el menú ni las imágenes que ya editaste en línea.
 
-```bash
-ng generate --help
-```
+## Probar en tu Mac
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+Tu Mac no tiene PHP, así que hay un servidor de prueba en Node que hace lo mismo que `api/index.php`.
+Abre dos terminales en esta carpeta:
 
 ```bash
-ng e2e
+npm run api
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+```bash
+npm start
+```
 
-## Additional Resources
+Luego abre `http://localhost:4200`. Lo que guardes en prueba queda en `.local/` y no toca el hosting.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Volver a cargar el menú desde el md
+
+Si cambias `datos/menu-casa-napoles.md` antes de publicar:
+
+```bash
+npm run datos
+```
+
+Ojo: una vez publicado, el menú se edita desde el panel. Regenerar la semilla solo afecta a una instalación nueva.

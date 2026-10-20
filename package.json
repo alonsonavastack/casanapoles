@@ -3,10 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "ng serve --proxy-config proxy.conf.json",
+    "build": "ng build && node scripts/empaquetar.mjs",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "api": "node scripts/servidor-local.mjs",
+    "datos": "node scripts/md-a-json.mjs",
+    "clave": "node scripts/crear-config.mjs"
   },
   "private": true,
   "packageManager": "npm@11.17.0",

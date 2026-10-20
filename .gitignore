@@ -42,3 +42,9 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+# Restaurante
+/api/config.php
+/api/datos/*.json
+/.local
+/.clave-local.txt

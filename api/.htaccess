@@ -1,0 +1,5 @@
+# Solo se puede llamar a index.php; config.php, la semilla y los datos no se sirven directo.
+<FilesMatch "^(config\.php|semilla\.json)$">
+  Require all denied
+</FilesMatch>
+Options -Indexes

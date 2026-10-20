@@ -1,0 +1,148 @@
+<header class="portada">
+  <img class="logo" src="img/logo-crema.png" alt="Casa Nápoles · Pizzeteria, cortes & tragos" width="330" height="220">
+  @if (datos.menu(); as m) {
+    <p class="lema dorado">{{ m.info.lema }}</p>
+  }
+</header>
+
+<div class="filtros" role="search">
+  <div class="fila">
+    <label class="buscar">
+      <span class="sr">Buscar en el menú</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+      <input
+        class="campo"
+        type="search"
+        id="buscar"
+        placeholder="Busca un platillo, trago o ingrediente"
+        [ngModel]="busqueda()"
+        (ngModelChange)="busqueda.set($event)"
+      />
+    </label>
+  </div>
+
+  <div class="fila chips" aria-label="Tipo">
+    <button type="button" class="chip" [class.activo]="!grupo()" (click)="elegirGrupo(null)">Todo</button>
+    @for (g of grupos; track g.id) {
+      <button type="button" class="chip" [class.activo]="grupo() === g.id" (click)="elegirGrupo(g.id)">{{ g.nombre }}</button>
+    }
+  </div>
+
+  <div class="fila chips desliza" aria-label="Categoría">
+    @for (c of categoriasVisibles(); track c.id) {
+      <button type="button" class="chip fino" [class.activo]="categoriaId() === c.id" (click)="elegirCategoria(c.id)">
+        {{ c.nombre }}
+      </button>
+    }
+  </div>
+
+  <div class="fila chips desliza" aria-label="Precio y fotos">
+    @for (t of topes; track t) {
+      <button type="button" class="chip fino" [class.activo]="precioMax() === t" (click)="elegirTope(t)">Hasta ${{ t }}</button>
+    }
+    @if (hayFotos()) {
+      <button type="button" class="chip fino" [class.activo]="soloFoto()" (click)="soloFoto.set(!soloFoto())">Con foto</button>
+    }
+    @if (conFiltros()) {
+      <button type="button" class="limpiar" (click)="limpiar()">Quitar filtros</button>
+    }
+  </div>
+</div>
+
+<main class="carta">
+  @if (datos.cargando() && !datos.menu()) {
+    <p class="estado">Cargando el menú…</p>
+  } @else if (datos.error()) {
+    <div class="estado">
+      <p>{{ datos.error() }}</p>
+      <button type="button" class="boton" (click)="datos.cargar()">Reintentar</button>
+    </div>
+  } @else if (secciones().length === 0) {
+    <div class="estado">
+      <p>No hay productos con esos filtros.</p>
+      <button type="button" class="boton" (click)="limpiar()">Quitar filtros</button>
+    </div>
+  } @else {
+    @if (conFiltros()) {
+      <p class="conteo">{{ total() }} {{ total() === 1 ? 'producto' : 'productos' }}</p>
+    }
+    @for (s of secciones(); track s.categoria.id) {
+      <section class="seccion" [id]="s.categoria.id">
+        <h2 class="dorado">{{ s.categoria.nombre }}</h2>
+        @for (n of s.categoria.notas; track $index) {
+          <p class="nota">{{ n }}</p>
+        }
+        @for (b of s.bloques; track b.subtitulo) {
+          @if (b.subtitulo) {
+            <h3 class="sub">{{ b.subtitulo }}</h3>
+          }
+          @for (n of b.notas; track $index) {
+            <p class="nota">{{ n }}</p>
+          }
+          <ul class="lista">
+            @for (p of b.productos; track p.id) {
+              <li class="item" [class.con-foto]="p.imagen">
+                @if (p.imagen) {
+                  <button type="button" class="foto" (click)="ampliada.set(p)" [attr.aria-label]="'Ver foto de ' + p.nombre">
+                    <img [src]="p.imagen" [alt]="p.nombre" loading="lazy" />
+                  </button>
+                }
+                <div class="cuerpo">
+                  <div class="linea">
+                    <span class="nombre">{{ p.nombre }}@if (p.detalle) { <small>{{ p.detalle }}</small> }</span>
+                    <span class="puntos" aria-hidden="true"></span>
+                    @if (p.precios.length === 1 && !p.precios[0].etiqueta) {
+                      <span class="precio">{{ p.precios[0].valor }}</span>
+                    }
+                  </div>
+                  @if (p.precios.length > 1 || p.precios[0]?.etiqueta) {
+                    <div class="precios">
+                      @for (pr of p.precios; track $index) {
+                        <span><small>{{ pr.etiqueta }}</small> {{ pr.valor }}</span>
+                      }
+                    </div>
+                  }
+                  @if (p.descripcion) {
+                    <p class="desc">{{ p.descripcion }}</p>
+                  }
+                  @if (p.opciones.length) {
+                    <p class="opciones">{{ p.opciones.join(' · ') }}</p>
+                  }
+                </div>
+              </li>
+            }
+          </ul>
+        }
+      </section>
+    }
+  }
+</main>
+
+@if (datos.menu(); as m) {
+  <footer class="pie">
+    <p class="nota">{{ m.info.notaPago }}</p>
+    <div class="info">
+      <div>
+        <h4>Horario de atención</h4>
+        @for (h of m.info.horario; track $index) {
+          <p>{{ h }}</p>
+        }
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        @for (c of m.info.contacto; track $index) {
+          <p>{{ c }}</p>
+        }
+      </div>
+    </div>
+    <a class="admin" routerLink="/admin">Administrar menú</a>
+  </footer>
+}
+
+@if (ampliada(); as p) {
+  <div class="visor" (click)="ampliada.set(null)" (keydown.escape)="ampliada.set(null)" role="dialog" aria-modal="true" [attr.aria-label]="p.nombre">
+    <img [src]="p.imagen" [alt]="p.nombre" />
+    <p>{{ p.nombre }}</p>
+    <button type="button" class="boton" (click)="ampliada.set(null)">Cerrar</button>
+  </div>
+}
