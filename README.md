@@ -13,7 +13,6 @@ Angular 22 en el navegador y un archivo PHP pequeño en cPanel que guarda el men
 | `src/` | La app de Angular (menú público en `publico/`, panel en `admin/`). |
 | `api/index.php` | La API que corre en cPanel: leer menú, entrar, guardar y subir fotos. |
 | `api/semilla.json` | El menú inicial, generado desde `datos/menu-casa-napoles.md`. |
-| `servidor/uploads/.htaccess` | Protección de la carpeta de fotos en el hosting. |
 | `scripts/` | Utilidades: pasar el md a JSON, crear la contraseña, servidor de prueba y empaquetado. |
 
 En el hosting el menú se guarda en `api/datos/menu.json` y las fotos en `uploads/`.
@@ -33,7 +32,7 @@ Cada vez que guardas, se deja un respaldo en `api/datos/respaldo-*.json` (los ú
    (la que sirve `https://einsteinmx.com/`; normalmente `public_html` o `einsteinmx.com`).
 4. Sube **todo el contenido** de `dist/para-cpanel/` a esa carpeta `restaurante`.
    Lo más fácil: comprime `dist/para-cpanel` en un .zip, súbelo con **Cargar** y usa **Extraer**.
-   Revisa que quedaron los archivos ocultos `.htaccess` (en Configuración de cPanel activa «Mostrar archivos ocultos»).
+   El paquete no trae ningún `.htaccess`: no toca la configuración de tu hosting.
 5. Abre `https://einsteinmx.com/restaurante/` y luego `#/admin` para entrar.
 
 ## Actualizar la app más adelante
@@ -65,3 +64,4 @@ npm run datos
 ```
 
 Ojo: una vez publicado, el menú se edita desde el panel. Regenerar la semilla solo afecta a una instalación nueva.
+# casanapoles
